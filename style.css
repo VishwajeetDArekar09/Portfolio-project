@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.portfolio-project {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.namelist {
+    display: flex;
+    gap: 3.5rem;
+    height: 8vh;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background-color: #080708; 
+    z-index: 1000;   
+}
+
+.namelist li {
+    list-style: none;
+}
+
+.namelist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #d83f3f;
+    position: relative;
+}
+
+.left-container{
+    background: #080808;
+    width: 70%;
+    height: 100vh;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;    
+}
+
+.right-container{
+    background:#080808;
+    width: 30%;
+    height: 100vh;
+    padding: 3rem;
+    align-items: center;
+}
+
+.left-icons .fa-brands{
+    color: #080808;
+    font-size: 2rem;
+}
+
+.left-icons{
+    display: flex;  
+    gap: 5rem;   
+    padding-left: 27rem;
+    padding-top: 15rem;
+    position: absolute;
+}
+
+.left-icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#bbbcf3,#3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -70%); 
+    text-align: center;
+    z-index: 2; 
+    margin-top: 8rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.left-content .intro{
+    display: flex;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.left-content h1{
+    font-size: 1.7rem;
+    color: #5db9ee;
+    display: flex;
+}
+
+.left-content .myname span{
+    color: #34ec24;
+    font-size: 3.5rem;
+}
+
+.left-content .detail{
+    color: #fff;
+    font-size: 0.9rem;
+    max-width: 36rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.5rem;
+}
+
+.button-container button{
+    border: .1rem solid #3877FF;
+    font-size: 1.1rem;
+    padding: .8rem 2rem;
+    border-radius: .5rem;
+    color: #262525;
+    cursor: pointer;
+    margin: 1rem;
+    background-color: #3877FF;
+    transition: .5s ease;
+}
+
+button:nth-child(1):hover{
+    background-color: #3877FF;
+    background: transparent;
+    color: #3877FF;
+}
+
+button:nth-child(2):hover{
+    background-color: #3877FF;
+    background: transparent;
+    color: #3877FF;
+    margin-left: 1rem;
+}
+
+.design .circle{
+    aspect-ratio: 1 ;
+    position: absolute;
+    border-radius:50%;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+
+.circle:nth-child(2){
+    width: 25rem;
+    background-image: url("image/WhatsApp\ Image\ 2024-08-25\ at\ 15.19.20_9d2212ad.jpg");
+    background-size: 125%;
+    background-repeat: no-repeat;
+    border: .3rem solid white;
+    box-shadow: 
+    0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877FF,
+    inset 0 0 2rem #3877FF,
+    0 0 3rem #3877FF;     
+}
+
+.namelist li a::after , .namelist .active-home::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+ 
+.namelist li a:hover::after, .namelist {
+    transform: scaleX(1);
+}
+
+.namelist li a:hover{
+    color: #5587f3
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; 
+    color: #fff;
+    text-align: center; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .brief {
+    display: flex; 
+    width: 100%;
+    gap: 10rem;
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+    max-width: 100rem; 
+    margin: 10rem auto;
+    padding: 7rem 5rem; 
+    margin-top: 15rem;
+    color: #34ec24;
+    word-wrap: break-word;
+}
+
+section .brief-about{
+    position: absolute;
+    width: 100%;
+    font-size: 1.2rem; 
+    line-height: 2rem; 
+    max-width: 1000rem; 
+    margin: 1rem auto; 
+    padding: 1rem 10rem; 
+    margin-top: 10rem;
+    color: #34ec24;
+    word-wrap: break-word;
+}
+
+section .brief-skills{
+    display: flex;
+    gap: 10rem;
+    position: absolute;
+    width: 100%;
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+    max-width: 1000rem; 
+    margin: 1rem auto; 
+    padding: 9rem 10rem; 
+    margin-top: 5rem;
+    color: #34ec24;
+    word-wrap: break-word;
+}
+
+section .brief-projects{
+    position: absolute;
+    width: 100%;
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+    max-width: 1000rem; 
+    margin: 1rem auto; 
+    padding: 1rem 10rem;
+    margin-top: 1rem;
+    color: #34ec24;
+    word-wrap: break-word;
+}
+
+section .brief-contact{
+    position: absolute;
+    width: 100%;
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+    max-width: 1000rem; 
+    margin: 1rem auto; 
+    padding: 1rem 10rem; 
+    margin-top: 1rem;
+    color: #34ec24;
+    word-wrap: break-word;
+}
+
+section .Home{
+    position: fixed;
+    margin-top: 0;
+    padding-top: 0;   
+}
+
+.text{
+    font-size: 1.7rem; 
+    color:#d83f3f;
+    position:fixed;
+    top: 10px; 
+    left: 100px;    
+    z-index: 1000;
+}
+
+.head {
+    text-align: center; 
+    padding-bottom: 1rem; 
+    position: relative; 
+    margin-bottom: 2rem; 
+    top: -10rem;
+    font-size: 2rem;
+    color: #d83f3f;
+    z-index: 10; 
+}
+
+.head::after {
+    content: '';
+    display: block;
+    width: 100vw; 
+    height: .3vw; 
+    background-color: #3877FF;
+    margin: 0 auto; 
+    border-radius: 2px; 
+    
+}
+
+.section-image {
+    width: 100%;
+    height: 100%; 
+    position: absolute;    
+}
+@media (max-width: 768px) {
+    .section-image {
+        width: 100%; 
+        margin-bottom: 1rem;
+    }
+}
+
+.brief{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%); 
+    text-align: center;
+}
+
+.downloadbutton{
+    cursor: pointer;
+    font-size: 3rem;
+    position: absolute;
+    background: transparent;
+    border: .1rem solid #3877FF;
+    font-size: 1.7rem;
+    padding: .8rem 3rem;
+    border-radius: 9rem;
+    color: #262525;
+    margin: 10rem;
+    background-color: #3877FF;
+    transition: .5s ease;
+}
+.downloadbutton:hover{
+    cursor: pointer;
+    background: linear-gradient(#bbbcf3,#3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
