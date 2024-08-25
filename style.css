@@ -45,7 +45,10 @@
     height: 100vh;
     padding-left: 3rem;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+     
 }
 
 .right-container{
@@ -227,15 +230,16 @@ section .brief-about{
 
 section .brief-skills{
     display: flex;
-    gap: 10rem;
+    flex-wrap: wrap;
+    gap: 4rem;
     position: absolute;
     width: 100%;
     font-size: 1.5rem; 
     line-height: 2rem; 
     max-width: 1000rem; 
     margin: 1rem auto; 
-    padding: 9rem 10rem; 
-    margin-top: 5rem;
+    padding: 10rem 12rem; 
+    margin-top: 8rem;
     color: #34ec24;
     word-wrap: break-word;
 }
@@ -287,7 +291,7 @@ section .Home{
     position: relative; 
     margin-bottom: 2rem; 
     top: -10rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #d83f3f;
     z-index: 10; 
 }
@@ -295,7 +299,7 @@ section .Home{
 .head::after {
     content: '';
     display: block;
-    width: 100vw; 
+    width: 100%; 
     height: .3vw; 
     background-color: #3877FF;
     margin: 0 auto; 
@@ -342,4 +346,5 @@ section .Home{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
